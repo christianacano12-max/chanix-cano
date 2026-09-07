@@ -1,0 +1,467 @@
+```css
+/* =========================
+   BASIC SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+span {
+    color: #0077b6;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    height: 70px;
+    padding: 0 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: white;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+nav h2 {
+    font-size: 25px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0077b6;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.home {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #eef6fa;
+}
+
+.home-text {
+    max-width: 600px;
+}
+
+.hello {
+    color: #0077b6;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.home h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.home h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.home-text > p:not(.hello) {
+    color: #666;
+    max-width: 500px;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: #0077b6;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #023e8a;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.home-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    padding: 10px;
+
+    background: #0077b6;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid white;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.title {
+    text-align: center;
+
+    font-size: 38px;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background: white;
+}
+
+.about-container {
+    display: flex;
+    gap: 30px;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+.about-card {
+    flex: 2;
+
+    padding: 30px;
+
+    background: #f5f7fb;
+
+    border-radius: 10px;
+}
+
+.about-card h3 {
+    color: #0077b6;
+
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    color: #666;
+
+    margin-bottom: 15px;
+}
+
+.about-info {
+    flex: 1;
+}
+
+.about-info div {
+    background: #eef6fa;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    border-radius: 8px;
+
+    border-left: 4px solid #0077b6;
+}
+
+.about-info strong {
+    color: #0077b6;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-container {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.skill {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    border-bottom: 4px solid #0077b6;
+
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.skill h3 {
+    color: #0077b6;
+
+    margin-bottom: 8px;
+}
+
+.skill p {
+    color: #777;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education {
+    background: white;
+}
+
+.education-container {
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.education-card {
+    background: #f5f7fb;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    border-left: 5px solid #0077b6;
+
+    border-radius: 8px;
+}
+
+.year {
+    color: #0077b6;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.education-card h3 {
+    margin-bottom: 5px;
+}
+
+.education-card p {
+    color: #666;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.project-container {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-number {
+    font-size: 40px;
+
+    font-weight: bold;
+
+    color: #0077b6;
+
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #666;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    text-align: center;
+
+    background: #023e8a;
+
+    color: white;
+}
+
+.contact .title {
+    color: white;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+.contact-box {
+    margin-top: 25px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #111;
+
+    color: #aaa;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        gap: 40px;
+    }
+
+    .home h1 {
+        font-size: 45px;
+    }
+
+    .circle {
+        width: 220px;
+        height: 220px;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .skills-container,
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+}
+```
